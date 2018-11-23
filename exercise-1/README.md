@@ -46,3 +46,4 @@ ReactDOM.render(element, container[, callback])
 
 * [React.createElement docs](https://kapeli.com/dash_share?docset_file=React&docset_name=React&path=reactjs.org/docs/react-api.html%23createelement&platform=react&repo=Main&source=reactjs.org/docs/react-api.html&version=16.6.3)
 * [ReactArmory's awesome post: React in Two Functions](NEED_LINK)
+* [React Without JSX](https://kapeli.com/dash_share?docset_file=React&docset_name=React&path=reactjs.org/docs/react-without-jsx.html&platform=react&repo=Main&source=reactjs.org/docs/react-without-jsx.html&version=16.6.3)
