@@ -1,8 +1,6 @@
 # Hands-on React Workshop - Exercise 2
 
-Whoa! Things got a little more complicated. In this folder, we've added in babel, webpack, and are using `webpack-dev-server`.
-
-Both `.babelrc` and `webpack.config.js` are configured for you.
+Whoa! Things got a little more complicated. In this folder, we've added in babel, webpack, and are using `webpack-dev-server`. Both `.babelrc` and `webpack.config.js` are configured for you.
 
 Feel free to use the code you wrote in `exercise-1`, but if you would like to use mine, you can use the following:
 
