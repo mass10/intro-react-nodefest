@@ -16,6 +16,10 @@ Using the functions `React.createElement` and `ReactDOM.render`, recreate the fo
 * Be able to add classes the React way
 * Use `ReactDOM.render` to render React elements onto the browser
 
+## Getting Started
+
+Open up `./index.html` in a browser!
+
 ## Instructions
 
 1. For the `div`, create a class `App` using `React.Component`. Don't forget to add the class.
