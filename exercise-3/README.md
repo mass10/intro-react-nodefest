@@ -8,6 +8,7 @@ First we'll learn how to pass information from parent to child.
 
 * Be able to use the `setState` method to change state of component
 * Be able to pass information from parent to child via props
+* Be able to use a lifecycle method to control procedure
 
 ## Getting Started
 
@@ -81,3 +82,10 @@ The way this will theoretically work is that anytime we search for a new gif, th
 * We make a request to Giphy and when they return the result, we change the image url state.
 
 1. Write a method called `handleSearch` in our `App` component that, when called, makes a fetch request to Giphy. Using `setState`, update the image url and the search term.
+1. It'd be nice to make a fetch when we first come to the page--instead of having a default picture. So where should we be fetching in our React component? We don't want to make a fetch while React is rendering elements onto the DOM because we'll be blocking progress. We want to make sure our component is *mounted* and then update. (That was a hint.)
+1. We want to run `handleSearch` inside of the proper method found in this [doc](https://kapeli.com/dash_share?docset_file=React&docset_name=React&path=reactjs.org/docs/react-component.html%23componentdidupdate&platform=react&repo=Main&source=reactjs.org/docs/react-component.html&version=16.6.3).
+1. When you first load the page, you *might* see the original gif if the internet is slow, but it will quickly be replaced by a random gif that we have fetched after the component has rendered. Feel free to remove the original gif.
+
+## Review
+
+So what happens now is that our React app renders and after the `App` component has mounted, we use `handleSearch` to fetch from Giphy. When we receive a response, we use `setState` to update the state of our `App` component. This causes another re-render to happen since our `CurrentGif` relies on information from `App`'s state.
