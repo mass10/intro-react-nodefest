@@ -1,5 +1,13 @@
 # Hands-on React Workshop - Exercise 1
 
+Using the functions `React.createElement` and `ReactDOM.render`, recreate the following DOM structure using React in `index.js`.
+
+```html
+<div class='app'>
+  <h1>Random Giphy Finder</h1>
+</div>
+```
+
 ## Objectives
 
 * Be able to use `React.createElement` to create a React element
@@ -9,14 +17,6 @@
 * Use `ReactDOM.render` to render React elements onto the browser
 
 ## Instructions
-
-Using the functions `React.createElement` and `ReactDOM.render`, recreate the following DOM structure using React in `index.js`.
-
-```html
-<div class='app'>
-  <h1>Random Giphy Finder</h1>
-</div>
-```
 
 1. For the `div`, create a class `App` using `React.Component`. Don't forget to add the class.
 2. For the `h1`, there is no need to use a class.
