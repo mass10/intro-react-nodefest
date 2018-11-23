@@ -1,4 +1,4 @@
-# Hands-on React Workshop - Exercise 3 - State & Props
+# Hands-on React Workshop - Exercise 3 - Passing Data from Parent to Child
 
 Time to start making our app!
 
@@ -28,11 +28,14 @@ The app we are going to create is a random gif generator using Giphy's free API.
 
 We want a nice image to appear right when we open up the app. This picture is going to change depending on what we search for, so let's make the picture part of our app's *state*.
 
-In `components/App.jsx`, initialize `state` with an image property set to this link: `https://media.giphy.com/media/12zV7u6Bh0vHpu/giphy.gif`.
+In `components/App.jsx`, initialize `state` with:
+
+* an image property set to this link: `https://media.giphy.com/media/12zV7u6Bh0vHpu/giphy.gif`.
+* a query property set to the string: "Search!"
 
 ### Create Child `GiphyContainer`
 
-We want our image to appear on the page. Let's create another component that simply displays the chosen image and current search term.
+We want our image to appear on the page. Let's create another component that simply displays the chosen image and also the current search term.
 
 Because this component only receives information, instead of creating a new class, let's create a simple function that returns a React element.
 
@@ -42,8 +45,8 @@ Example Skeleton:
 
 ```html
 <div>
-  <h2></h2>
-  <img />
+  <h2></h2> // <--- this is where the current search term should appear
+  <img /> // <--- make a gif appear!
 </div>
 ```
 
@@ -51,3 +54,25 @@ Example Skeleton:
 
 1. Underneath `<h1>`, add in your new `GiphyContainer` component and pass in the image url as a prop.
 1. In `GiphyContainer`, make the image appear by using the prop that you just passed yourself. Your image should appear!
+
+### Fetch Data
+
+We want to be able to fetch more gifs using Giphy's awesome APIs.
+
+To save you the headache of reading through Giphy's docs (although they're really nice--go Giphy!), we provided you with the code snippet here to fetch a random gif:
+
+```js
+const URL = "http://api.giphy.com/v1/gifs/random?" +
+      "api_key=9HDQc04ELow7kn8m7L78fMhCbNtK00QG";
+
+    fetch(URL).then(res => res.json()).then(({ data }) => {
+      /* YOUR CODE TO SET STATE */
+    });
+```
+
+> If you're experience issues with the API, replace the api key with your own.
+
+The way this will theoretically work is that anytime we search for a new gif, these things will happen:
+
+* The search term state will change
+* We make a request to Giphy and when they return the result, we change the image url state.
