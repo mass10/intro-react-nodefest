@@ -35,6 +35,8 @@ yarn install // or npm install
 yarn dev
 ```
 
+You can also use npm :)
+
 Open up `localhost:8080` in your browser.
 
 ## Instructions
