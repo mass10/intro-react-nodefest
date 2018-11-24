@@ -38,3 +38,9 @@ You may run into some problems with `this`. To bypass those issues, you can eith
 It might be nice to have a list of prevous gifs. Create a component that will display a history of gifs.
 
 You'll need to create a new state property to keep track of the history. Before you get started, think about which component you'll add this state to.
+
+## Resources
+
+* [Naming Event Handlers in React - Best Practices](https://jaketrent.com/post/naming-event-handlers-react/)
+* [Forms in React](https://reactjs.org/docs/forms.html)
+* [Yan's example app](https://github.com/yanarchy/example-app) --> Ask Yan for permission because it's private

@@ -22,9 +22,9 @@ Open up `./index.html` in a browser!
 
 ## Instructions
 
-1. For the `div`, create a class `App` using `React.Component`. Don't forget to add the class.
+1. For the `div`, create a class `App` using [`React.Component`](https://reactjs.org/docs/react-api.html). Don't forget to add the class.
 2. For the `h1`, there is no need to use a class.
-3. Using `ReactDOM.render`, render your `App` element on the `div` with the id `root` that can be found in `index.html`.
+3. Using [`ReactDOM.render`](https://reactjs.org/docs/react-dom.html), render your `App` element on the `div` with the id `root` that can be found in `index.html`.
 
 ## Resources
 
@@ -45,5 +45,7 @@ ReactDOM.render(element, container[, callback])
 ```
 
 * [React.createElement docs](https://kapeli.com/dash_share?docset_file=React&docset_name=React&path=reactjs.org/docs/react-api.html%23createelement&platform=react&repo=Main&source=reactjs.org/docs/react-api.html&version=16.6.3)
-* [ReactArmory's awesome post: React in Two Functions](NEED_LINK)
-* [React Without JSX](https://kapeli.com/dash_share?docset_file=React&docset_name=React&path=reactjs.org/docs/react-without-jsx.html&platform=react&repo=Main&source=reactjs.org/docs/react-without-jsx.html&version=16.6.3)
+* [ReactDOM docs](https://reactjs.org/docs/react-dom.html)
+* [React Without JSX](https://reactjs.org/docs/react-without-jsx.html)
+* [React's Most Basics - ReactArmory](https://reactarmory.com/guides/learn-react-by-itself/react-basics)
+* [React Create Element - Learn.co](https://learn.co/lessons/react-create-element)

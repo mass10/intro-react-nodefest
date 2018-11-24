@@ -89,3 +89,9 @@ The way this will theoretically work is that anytime we search for a new gif, th
 ## Review
 
 So what happens now is that our React app renders and after the `App` component has mounted, we use `handleSearch` to fetch from Giphy. When we receive a response, we use `setState` to update the state of our `App` component. This causes another re-render to happen since our `CurrentGif` relies on information from `App`'s state.
+
+## Resources
+
+[![](https://pbs.twimg.com/media/DZ-97vzW4AAbcZj.jpg)](https://twitter.com/dan_abramov/status/981712092611989509)
+
+* [ReactJs component lifecycle methods — A deep dive](https://hackernoon.com/reactjs-component-lifecycle-methods-a-deep-dive-38275d9d13c0)

@@ -53,3 +53,4 @@ Do the following solo or with a partner:
 ## Resources
 
 * [JSX Docs](https://kapeli.com/dash_share?docset_file=React&docset_name=React&path=reactjs.org/docs/introducing-jsx.html&platform=react&repo=Main&source=reactjs.org/docs/introducing-jsx.html&version=16.6.3)
+* [React Components](https://reactjs.org/docs/react-api.html#reactcomponent)
