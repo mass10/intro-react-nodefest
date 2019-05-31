@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --hot --progress --open"
+    "dev": "webpack-dev-server --hot --progress --open --port 8080 --host 0.0.0.0"
   },
   "dependencies": {
     "babel-loader": "^7.1.4",
